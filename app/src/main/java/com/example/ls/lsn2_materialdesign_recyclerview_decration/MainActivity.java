@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 18; i++) {
             mList.add("item" + i);
         }
     }
