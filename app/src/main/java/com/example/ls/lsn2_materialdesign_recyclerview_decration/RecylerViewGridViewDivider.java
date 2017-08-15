@@ -7,11 +7,6 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
-/**
- * Created by ls on 2017/8/15.
- */
-
 public class RecylerViewGridViewDivider extends RecyclerView.ItemDecoration {
     private int[] attr = new int[]{android.R.attr.listDivider};
     private Drawable mDivider;
@@ -21,8 +16,6 @@ public class RecylerViewGridViewDivider extends RecyclerView.ItemDecoration {
         mDivider = array.getDrawable(0);
         array.recycle();
     }
-
-
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
         onDrawHoriziontal(c, parent);
