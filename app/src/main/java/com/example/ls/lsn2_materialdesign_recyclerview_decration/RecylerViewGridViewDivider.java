@@ -22,14 +22,13 @@ public class RecylerViewGridViewDivider extends RecyclerView.ItemDecoration {
         array.recycle();
     }
 
+
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
         onDrawHoriziontal(c, parent);
         onDrawVitical(c, parent);
         super.onDraw(c, parent, state);
-
     }
-
     private void onDrawHoriziontal(Canvas c, RecyclerView parent) {
         int count = parent.getChildCount();
         for (int i = 0; i < count; i++) {
