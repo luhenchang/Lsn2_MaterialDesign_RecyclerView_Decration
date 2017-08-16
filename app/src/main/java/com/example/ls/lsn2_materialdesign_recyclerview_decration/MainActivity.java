@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private MyRecyclerAdapter mAdapter;
     private ArrayList<String> mList;
     private RecyclerView.ItemDecoration decor;
-
+    private ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
